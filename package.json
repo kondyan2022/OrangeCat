@@ -3,6 +3,7 @@
   "description": "This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier.",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kondyan2022.github.io/orange-cat/",
   "author": {
     "name": "João Paulo Moraes",
     "email": "joaopaulomoraes@outlook.com",
@@ -14,7 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build --env base=orange-cat/",
+    "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
