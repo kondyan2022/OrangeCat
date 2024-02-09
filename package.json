@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build base=orange-cat/",
+    "build": "tsc && vite build --env base=orange-cat/",
     "serve": "vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
