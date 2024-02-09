@@ -4,29 +4,25 @@ import App from './App'
 
 describe('<App />', () => {
   it('should render the App', () => {
-    const { container } = render(<App />)
+    render(<App />)
 
     expect(
       screen.getByRole('heading', {
-        name: /Welcome!/i,
+        name: /Happy cat ToDo list/i,
         level: 1
       })
     ).toBeInTheDocument()
 
-    expect(
-      screen.getByText(
-        /This is a boilerplate build with Vite, React 18, TypeScript, Vitest, Testing Library, TailwindCSS 3, Eslint and Prettier./i
-      )
-    ).toBeInTheDocument()
+    expect(screen.getByRole('list')).toBeInTheDocument()
 
     expect(
-      screen.getByRole('link', {
-        name: /start building for free/i
+      screen.getByRole('button', {
+        name: /Add new ToDo/i
       })
     ).toBeInTheDocument()
 
-    expect(screen.getByRole('img')).toBeInTheDocument()
-
-    expect(container.firstChild).toBeInTheDocument()
+    expect(
+      screen.getByRole('img', { name: /Wonderful orange cat/i })
+    ).toBeInTheDocument()
   })
 })

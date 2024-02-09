@@ -5,9 +5,10 @@ import AddForm from './AddForm'
 import imageCat from '../assets/OrangeCat.jpg'
 
 const startList: ToDoItem[] = [
-  { id: '1', text: 'todo 1', done: false },
-  { id: '2', text: 'todo 2', done: true },
-  { id: '3', text: 'todo 3', done: true }
+  { id: '1', text: 'Breakfast', done: true },
+  { id: '2', text: 'Dinner', done: false },
+  { id: '3', text: 'Meditation', done: false },
+  { id: '4', text: 'Afternoon tea', done: false }
 ]
 
 function App() {
@@ -48,8 +49,9 @@ function App() {
         <AddForm onSubmit={addItem} />
       ) : (
         <button
-          className="self-end rounded-lg bg-orange-500  px-[20px] py-[12px] text-white transition-colors hover:bg-orange-700"
+          className="self-end rounded-lg bg-orange-500  px-[20px] py-[12px] text-white outline-orange-500 transition-colors hover:bg-orange-700"
           onClick={() => setIsAdd(true)}
+          autoFocus
         >
           Add new Todo
         </button>

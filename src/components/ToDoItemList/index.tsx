@@ -32,7 +32,7 @@ const ToDoItemList = memo(function ToDoItemList({
       <button
         type="button"
         onClick={handleDeleteItem}
-        className="rounded border-orange-500 px-[5px] transition-colors hover:bg-orange-700 hover:text-white  "
+        className="rounded border-orange-500 px-[5px] outline-orange-500 transition-colors hover:bg-orange-700   hover:text-white   "
       >
         Delete
       </button>
